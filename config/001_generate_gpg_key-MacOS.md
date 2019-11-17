@@ -6,11 +6,11 @@ The links to the official GitHub walkthrough pages are included, but the bullet 
   - if the above command didn't work:
     - `gpg2 --list-secret-keys --keyid-format LONG`
     - `git config --global gpg.program $(which gpg2)`
-    - If you don't see any key pairs or want to use a different key, proceed to the next step below. Otherwise, skip to the following step
+    - If you don't see any key pairs or want to use a different key, proceed to the next step below. Otherwise, skip to the following step (`Add the new key to your GitHub account`)
     - Download the [GPG command line tools](https://help.github.com/en/github/authenticating-to-github/generating-a-new-gpg-key) for your OS (scroll down to **GnuPG binary releases**). This is mostly taken from [Generating a new GPG key](https://help.github.com/en/github/authenticating-to-github/generating-a-new-gpg-key)
   - open terminal
-  - install `pinetry` using `brew` to make sure you can enter your passphrase when necessary:
-    - `brew install pinentry`
+    - install `pinetry` using `brew` to make sure you can enter your passphrase when necessary:
+      - `brew install pinentry`
     - generate a GPG key pair using
       - `gpg --full-generate-key`
       - specify the type of key you want (accept the default `RSA and RSA` if unsure)
