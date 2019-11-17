@@ -70,14 +70,14 @@ The links to the official GitHub walkthrough pages are included, but the bullet 
     - `git config commit.gpgsign true`
     - To sign all commits by default in any local repository on your computer open terminal and enter:
       - `git config --global commit.gpgsign true`
-  - add the `-S` flag to the git commit command when committing changes in your local branch and enter the passphrase you provided when creating the GPG key after entering your commit message
+      - if you DON'T do the step above this: add the `-S` flag to the git commit command when committing changes in your local branch and enter the passphrase you provided when creating the GPG key after entering your commit message
     - `git commit -S -m "your commit message" # Creates a signed commit`
     - push changes to your remote GitHub repository:
       - `git push origin yourBranch`
   - check to see your verified signature on GitHub by navigating to your pull request and clicking `Commits`
 - [Signing tags](https://help.github.com/en/github/authenticating-to-github/signing-tags)
-  - similar procedure as signing commits:
-    - `git tag -s mytag #Creates a signed tag`
+  - similar procedure as signing commits (again, you only need to incude the `-S` flag if you don't set `commit.gpgsign` to `true` - see above for more info):
+    - `git tag -S mytag #Creates a signed tag`
       - verify your tag is signed by running `git tag -v [tag-name]`
         - `git tag -v mytag #Verifies the signed tag`
 - [Viewing your repository's tags](https://help.github.com/en/github/administering-a-repository/viewing-your-repositorys-tags)
