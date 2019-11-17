@@ -3,7 +3,7 @@
 
 # run using:
 # 001_gitcompletion_setup.bash
-# you can rerun this script to update the git-completion file from master, just comment out the indicated line below
+# rerun this script to update git-completion file from master, commenting out indicated line
 
 curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash > ~/.git_completion.bash
 
