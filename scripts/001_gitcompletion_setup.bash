@@ -5,7 +5,7 @@
 # 001_gitcompletion_setup.bash
 # rerun this script to update git-completion file from master, commenting out indicated line
 
-curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash > ~/.git_completion.bash
+curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash > ~/.git-completion.bash
 
 # comment out THIS following line if you already ran this and just want to update git-completion from the downstream master repository
 touch ~/.bash_profile && printf "\nsource ~/.git-completion.bash\n" >> ~/.bash_profile
