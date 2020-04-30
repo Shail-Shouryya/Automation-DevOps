@@ -2,5 +2,5 @@
 for app in /Applications/*
 do
     printf "Currently running $app Version: "
-    cat "${app}"/Contents/Info.plist | tr '\t' ' ' | tr '\n' ' ' | grep -ie "<key>CFBundle\(\w\+\)\?Version\w\+</key>  <string>[0-9\.]\+" -o | cut -d ">" -f 4
+    cat "${app}"/Contents/Info.plist | tr '\t' ' ' | tr '\n' ' ' | grep -ie "<key>CFBundleShortVersionString</key>  <string>[0-9\.]\+" -o | cut -d ">" -f 4
 done
